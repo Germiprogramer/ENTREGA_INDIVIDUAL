@@ -21,15 +21,16 @@ if __name__ == "__main__":
     A.distancia(B)
 
     #distancia más grande
-    if A.distancia(D) > B.distancia(D) and A.distancia(D) > C.distancia(D):
-        print("A es el más lejano")
-    elif B.distancia(D) > A.distancia(D) and B.distancia(D) > C.distancia(D):
-        print("B es el más lejano")
-    elif C.distancia(D) > A.distancia(D) and C.distancia(D) > B.distancia(D):
-        print("C es el más lejano")
-    else:
-        print("hay dos o más distancias iguales")
-    
+    def distancia_mas_grande(A,B,C,D):
+        if A.distancia(D) > B.distancia(D) and A.distancia(D) > C.distancia(D):
+            print("A es el más lejano")
+        elif B.distancia(D) > A.distancia(D) and B.distancia(D) > C.distancia(D):
+            print("B es el más lejano")
+        elif C.distancia(D) > A.distancia(D) and C.distancia(D) > B.distancia(D):
+            print("C es el más lejano")
+        else:
+            print("hay dos o más distancias iguales")
+    distancia_mas_grande(A,B,C,D)
             
     #rectángulo
     r = Rectangulo(A,B)
