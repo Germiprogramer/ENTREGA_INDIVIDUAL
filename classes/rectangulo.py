@@ -1,4 +1,4 @@
-from punto import *
+from classes.punto import *
 import math
 
 class Rectangulo():
@@ -18,7 +18,9 @@ class Rectangulo():
         return altura
 
     def area(self):
-        area = Rectangulo.altura() * Rectangulo.base()
+        base = abs(self.c_3[0]-self.c_4[0])
+        altura = abs(self.c_1[1]-self.c_3[1])
+        area = base * altura
         return area
         
 
