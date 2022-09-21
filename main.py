@@ -2,7 +2,7 @@ from classes.punto import *
 from classes.rectangulo import *
 
 if __name__ == "__main__":
-    #punto
+    #puntos
     A = Punto(2,3)
     B = Punto(5,5)
     C = Punto(-3,-1)
