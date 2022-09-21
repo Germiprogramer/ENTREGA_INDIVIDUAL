@@ -1,4 +1,5 @@
 from punto import *
+import math
 
 class Rectangulo():
     def __init__(self, punto_1, punto_2):
@@ -8,12 +9,16 @@ class Rectangulo():
         self.c_3 = (punto_1.x, punto_2.y)
         self.c_4 = (punto_2.x, punto_2.y)
 
-    def base():
-        pass
+    def base(self):
+        base = abs(self.c_3[0]-self.c_4[0])
+        return base
 
-    def altura():
-        pass
+    def altura(self):
+        altura = abs(self.c_1[1]-self.c_3[1])
+        return altura
 
-    def area():
-        pass
+    def area(self):
+        area = Rectangulo.altura() * Rectangulo.base()
+        return area
+        
 
