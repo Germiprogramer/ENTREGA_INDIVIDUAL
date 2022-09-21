@@ -1,13 +1,16 @@
 import math
 
 class Punto():
+    #contructor
     def __init__(self, x, y):
         self.x = x
         self.y = y
     
+    #string
     def string(self):
         print("({},{})".format(self.x,self.y))
 
+    #cuadrante
     def cuadrante(self):
         cuadrante = ""
         if self.x == 0 and self.y != 0:
@@ -27,12 +30,14 @@ class Punto():
         print(cuadrante)
         return cuadrante
 
+    #vector
     def vector(self, punto_2):
         v_x = self.x - punto_2.x
         v_y = self.y - punto_2.y
         print("El vector es igual a ({},{})".format(v_x,v_y))
         return (v_x, v_y)
 
+    #distancia
     def distancia(self, punto_2):
         v_x = self.x - punto_2.x
         v_y = self.y - punto_2.y
